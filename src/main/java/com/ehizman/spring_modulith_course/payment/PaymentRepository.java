@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface PaymentRepository extends CrudRepository<PaymentStatus, Long> {
+interface PaymentRepository extends CrudRepository<PaymentStatus, Long> {
     Optional<Payment> getPaymentByOrderId(String orderId);
 }

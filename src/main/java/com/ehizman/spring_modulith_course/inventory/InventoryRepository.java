@@ -12,7 +12,7 @@ import java.util.Optional;
  */
 
 @Repository
-public interface InventoryRepository extends CrudRepository<Inventory, Long> {
+interface InventoryRepository extends CrudRepository<Inventory, Long> {
     Optional<Inventory> getInventoryByName(String name);
     List<Inventory> getInventoryByNameIn(List<String> names);
 }
